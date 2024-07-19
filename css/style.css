@@ -183,6 +183,32 @@ button[type=submit].btn_border {
   margin-top: 4px;
 }
 
+.pattern-selector {
+  padding: 24px;
+  max-width: 550px;
+}
+.pattern-selector__title {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+.pattern-selector__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.pattern-selector__item {
+  width: 100%;
+  display: block;
+  text-decoration: none;
+  color: var(--color-dark);
+}
+.pattern-selector__item span {
+  display: block;
+  margin-top: 4px;
+  text-align: center;
+  font-weight: 600;
+}
+
 .rooms-visualiser {
   width: 100%;
   height: 100%;
@@ -223,6 +249,7 @@ button[type=submit].btn_border {
     display: flex;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 16px;
   }
   .rooms-visualiser__panel .rooms-visualiser__coverage-name {
@@ -299,6 +326,12 @@ button[type=submit].btn_border {
   flex-shrink: 0;
   width: 16px;
   height: 6.5px;
+  transform: rotate(-90deg);
+}
+@media (max-width: 767px) {
+  .rooms-visualiser__select-btn svg {
+    transform: rotate(0deg);
+  }
 }
 .rooms-visualiser__coverage-name {
   margin-bottom: 16px;
