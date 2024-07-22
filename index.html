@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Document</title>
 </head>
@@ -20,15 +21,15 @@
     <div class="hidden">
       <div class="creative" id="creative">
         <div class="creative__container">
-  
+
           <div class="creative__logo">
             <img src="img/logo.svg" alt="">
           </div>
           <div class="creative__main">
             <div class="rooms-visualiser">
-  
+
               <div class="rooms-visualiser__panel">
-  
+
                 <a data-fancybox data-src="#rooms-selector" href="javascript:;" class="rooms-visualiser__select">
                   <div class="rooms-visualiser__select-preview">
                     <img src="./img/thumbnail-01.jpeg" alt="">
@@ -38,32 +39,30 @@
                     <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 0.75L7.5 7.25L14 0.75" stroke="#333333" />
                     </svg>
-  
+
                   </div>
                 </a>
-                <a data-fancybox data-src="#coverage-selector" href="javascript:;"
-                  class="rooms-visualiser__select">
+                <a data-fancybox data-src="#coverage-selector" href="javascript:;" class="rooms-visualiser__select">
                   <div class="rooms-visualiser__select-btn">
                     <span>Выберите покрытие </span>
                     <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 0.75L7.5 7.25L14 0.75" stroke="#333333" />
                     </svg>
-  
+
                   </div>
                 </a>
-                <a data-fancybox data-src="#pattern-selector" href="javascript:;"
-                  class="rooms-visualiser__select">
+                <a data-fancybox data-src="#pattern-selector" href="javascript:;" class="rooms-visualiser__select">
                   <div class="rooms-visualiser__select-btn">
                     <span>Вариант раскладки</span>
                     <svg width="15" height="8" viewBox="0 0 15 8" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M1 0.75L7.5 7.25L14 0.75" stroke="#333333" />
                     </svg>
                   </div>
-              </a>
-  
+                </a>
+
                 <div class="rooms-visualiser__coverage-name">Название выбранного покрытия коллекции</div>
                 <div class="rooms-visualiser__coverage-articul">арт 123456</div>
-  
+
                 <button type="button" class="rooms-visualiser__btn btn_dark">Заказать расчет</button>
                 <button type="button" class="rooms-visualiser__btn btn btn_border">Отправить на  e-mail</button>
               </div>
@@ -646,7 +645,7 @@
                           <img src="img/pattern-02.png" />
                         </div>
                       </div>
-  
+
                     </div>
                   </div>
                 </div>
@@ -654,7 +653,6 @@
               <div class="rooms-visualiser__info">
                 <div class="rooms-visualiser__coverage-name">Название выбранного покрытия коллекции</div>
                 <div class="rooms-visualiser__coverage-articul">арт 123456</div>
-  
                 <button type="button" class="rooms-visualiser__btn btn_dark">Заказать расчет</button>
                 <button type="button" class="rooms-visualiser__btn btn btn_border">Отправить на  e-mail</button>
               </div>
@@ -691,33 +689,309 @@
           </a>
         </div>
       </div>
-      <div class="coverage-selector" id="coverage-selector">
-        <div class="coverage-selector__title">Выберите покрытие</div>
-        <div class="coverage-selector__list">
-          <a href="#" class="coverage-selector__item">
-            <img src="img/pattern-01.jpg" alt="">
-            <span>Ковровая плитка Balsa Alize</span>
-          </a>
-          <a href="#" class="coverage-selector__item">
-            <img src="img/pattern-02.png" alt="">
-            <span>Ковровая плитка Balsa Alize</span>
-          </a>
-          <a href="#" class="coverage-selector__item">
-            <img src="img/pattern-03.png" alt="">
-            <span>Ковровая плитка Balsa Alize</span>
-          </a>
-          <a href="#" class="coverage-selector__item">
-            <img src="img/pattern-01.jpg" alt="">
-            <span>Ковровая плитка Balsa Alize</span>
-          </a>
-          <a href="#" class="coverage-selector__item">
-            <img src="img/pattern-01.jpg" alt="">
-            <span>Ковровая плитка Balsa Alize</span>
-          </a>
-          <a href="#" class="coverage-selector__item">
-            <img src="img/pattern-01.jpg" alt="">
-            <span>Ковровая плитка Balsa Alize</span>
-          </a>
+      <div class="coverage-selection" id="coverage-selector">
+        <div class="coverage-selection__step is-active">
+          <div class="coverage-selection__step-head">
+            <div class="coverage-selection__step-title">Выберите покрытие</div>
+          </div>
+          <div class="coverage-selection__step-content">
+            <div class="popular-sections">
+              <div class="row row-flex">
+                <div class="column-3">
+                  <div href="/dizajn-plitka/" title="дизайн-плитка"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/01b/01b09f068d52fdec906d61edab4e28c9.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Дизайн-плитка <b>(30)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/kauchukovye-pokrytiya/" title="каучуковые покрытия"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/00f/00ff700d310112ea418613f1ad5e1c42.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Каучуковые покрытия <b>(18)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/kovrovaya-plitka/" title="ковровая плитка"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/a10/a109a436f7a2a1e85f60f46b8140a4c4.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Ковровая плитка <b>(129)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/kovrolin/" title="ковровые покрытия"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/768/76879240861e7e8293c898c6d029ce94.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Ковровые покрытия <b>(316)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/kovry/" title="ковры"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/3a4/3a4ee6a7c4a2a6ab1661f7babc104948.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Ковры <b>(14)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/kommercheskij-linoleum/" title="коммерческий линолеум"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/8b6/8b6f86c22529683e57b1a690532a4cb7.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Коммерческий линолеум <b>(30)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/naturalnyj-kamen/" title="натуральный камень"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/5ac/5acc55b58953885e57c08bf166fe4cf3.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Натуральный камень <b>(1)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/marmoleum/" title="натуральный линолеум"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/06f/06fe0a0763f6c4b92ac2d0223250cc34.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Натуральный линолеум <b>(16)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/parket/" title="паркет"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/9a1/9a10e9160a40ff29f93e14b921ca49ca.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Паркет <b>(26)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/tsinovki/" title="покрытия из сизаля"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/f86/f86cc5ec31f9bd8e4d93fe77faac552a.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Покрытия из сизаля <b>(8)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/promyshlennye-poly/" title="промышленные полы"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/bae/bae94eafb3ff0d69c0597acc2c00b547.JPG');"
+                    class="popular-sections--item">
+                    <span class="name">Промышленные полы <b>(0)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/gryazezashchitnye-pokrytiya/" title="системы грязезащиты"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/ab6/ab6f1f0df0724153bc0bf8f49a76e319.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Системы грязезащиты <b>(89)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/sportivnye-pokrytiya/" title="спортивные покрытия"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/0b8/0b891af06ab541a62d3b0c39a7601eb7.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Спортивные покрытия <b>(1)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/tkanye-pvh-pokrytiya/" title="тканые пвх покрытия"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/685/685914bc55d70b8b6f556822472c4e9e.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Тканые ПВХ покрытия <b>(15)</b></span>
+                  </div>
+                </div>
+                <div class="column-3">
+                  <div href="/falshpoly/" title="фальшполы"
+                    style=" background-image: url('https://ortgraph.ru/upload/iblock/cc4/cc4104171b51894e5097cf11b4bad9e5.jpg');"
+                    class="popular-sections--item">
+                    <span class="name">Фальшполы <b>(7)</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="coverage-selection__step">
+          <div class="coverage-selection__step-head">
+            <div class="coverage-selection__step-title">Выберите коллекцию</div>
+            <button class="coverage-selection__step-back">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="24" height="24" x="0" y="0" viewBox="0 0 128 128" style="enable-background:new 0 0 512 512"
+              xml:space="preserve" class="">
+                <path
+                  d="M84 108a3.988 3.988 0 0 1-2.828-1.172l-40-40a3.997 3.997 0 0 1 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656L49.656 64l37.172 37.172a3.997 3.997 0 0 1 0 5.656A3.988 3.988 0 0 1 84 108z"
+                  fill="#000000" opacity="1" data-original="#000000" class="">
+                </path>
+              </svg>
+              <span>Назад</span>
+            </button>
+          </div>
+          <div class="coverage-selection__step-content">
+            <div class="product-list-grid">
+              <div class="catalog-section--item">
+                <div class="product-item">
+                  <h3>Ковровая плитка Balsan Atlas HD</h3>
+                  <div class="product-item--img">
+                    <div class="product-item--img--container">
+                      <img src="img/catalog/img-01.jpg" alt="Atlas HD ">
+                    </div>
+                  </div>
+                  <div class="product-item--info">
+                    <div>1<span>артикул</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-section--item">
+                <div class="product-item">
+                  <h3>Ковровая плитка Balsan Atlas HD</h3>
+                  <div class="product-item--img">
+                    <div class="product-item--img--container">
+                      <img src="img/catalog/img-01.jpg" alt="Atlas HD ">
+                    </div>
+                  </div>
+                  <div class="product-item--info">
+                    <div>1<span>артикул</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-section--item">
+                <div class="product-item">
+                  <h3>Ковровая плитка Balsan Atlas HD</h3>
+                  <div class="product-item--img">
+                    <div class="product-item--img--container">
+                      <img src="img/catalog/img-01.jpg" alt="Atlas HD ">
+                    </div>
+                  </div>
+                  <div class="product-item--info">
+                    <div>1<span>артикул</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog-section--item">
+                <div class="product-item">
+                  <h3>Ковровая плитка Balsan Atlas HD</h3>
+                  <div class="product-item--img">
+                    <div class="product-item--img--container">
+                      <img src="img/catalog/img-01.jpg" alt="Atlas HD ">
+                    </div>
+                  </div>
+                  <div class="product-item--info">
+                    <div>1<span>артикул</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="coverage-selection__step">
+          <div class="coverage-selection__step-head">
+            <div class="coverage-selection__step-title">Выберите коллекцию</div>
+            <button class="coverage-selection__step-back">
+              <svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="24" height="24" x="0" y="0" viewBox="0 0 128 128" style="enable-background:new 0 0 512 512"
+                xml:space="preserve" class="">
+                  <path
+                    d="M84 108a3.988 3.988 0 0 1-2.828-1.172l-40-40a3.997 3.997 0 0 1 0-5.656l40-40c1.563-1.563 4.094-1.563 5.656 0s1.563 4.094 0 5.656L49.656 64l37.172 37.172a3.997 3.997 0 0 1 0 5.656A3.988 3.988 0 0 1 84 108z"
+                    fill="#000000" opacity="1" data-original="#000000" class="">
+                  </path>
+              </svg>
+              <span>Назад</span>
+            </button>
+          </div>
+          <div class="coverage-selection__step-content">
+            <div class="product-card-patterns__list">
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/26b/26bcc1ee0a9c21ff7a540de02ab257a2.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/26b/63_63_2/26bcc1ee0a9c21ff7a540de02ab257a2.jpg"
+                  alt="Alize 140" width="100" height="100">
+                <span>
+                  Alize 140 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/31d/31d29b5d7b5e706bd570c294307d30c1.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/31d/63_63_2/31d29b5d7b5e706bd570c294307d30c1.jpg"
+                  alt="Alize 190" width="100" height="100">
+                <span>
+                  Alize 190 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/37d/37d567d657bd5a6efb29fa553359bfbf.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/37d/63_63_2/37d567d657bd5a6efb29fa553359bfbf.jpg"
+                  alt="Alize 570" width="100" height="100">
+                <span>
+                  Alize 570 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/df9/df9e7319524c99f19598991c47de2801.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/df9/63_63_2/df9e7319524c99f19598991c47de2801.jpg"
+                  alt="Alize 610" width="100" height="100">
+                <span>
+                  Alize 610 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/cef/cefa47c18c0a273ce0b102188c829ca4.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/cef/63_63_2/cefa47c18c0a273ce0b102188c829ca4.jpg"
+                  alt="Alize 670" width="100" height="100">
+                <span>
+                  Alize 670 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/e2c/e2cabf3b7cc38e14f3cd43c5b9f88ac5.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/e2c/63_63_2/e2cabf3b7cc38e14f3cd43c5b9f88ac5.jpg"
+                  alt="Alize 760" width="100" height="100">
+                <span>
+                  Alize 760 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="/upload/iblock/fa7/fa7704109d77553944fdb52827ced045.jpg">
+                <img src="/upload/resize_cache/iblock/fa7/63_63_2/fa7704109d77553944fdb52827ced045.jpg" alt="Alize 790"
+                  width="100" height="100">
+                <span>
+                  Alize 790 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/aa6/aa6d22ba5ce480e1d44a6e23de194b14.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/aa6/63_63_2/aa6d22ba5ce480e1d44a6e23de194b14.jpg"
+                  alt="Alize 920" width="100" height="100">
+                <span>
+                  Alize 920 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/bf7/bf7e21b3993b1252d87e1f6a7d760a8a.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/bf7/63_63_2/bf7e21b3993b1252d87e1f6a7d760a8a.jpg"
+                  alt="Alize 930" width="100" height="100">
+                <span>
+                  Alize 930 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/400/400d175d301f0669d730e420175fe2d9.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/400/63_63_2/400d175d301f0669d730e420175fe2d9.jpg"
+                  alt="Alize 950" width="100" height="100">
+                <span>
+                  Alize 950 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/686/6861c5adc76075b6ec2d86592d106dd1.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/686/63_63_2/6861c5adc76075b6ec2d86592d106dd1.jpg"
+                  alt="Alize 970" width="100" height="100">
+                <span>
+                  Alize 970 </span>
+              </div>
+              <div class="product-card-patterns__item reset-btn"
+                data-picture="https://ortgraph.ru/upload/iblock/c88/c888a4b4802d735888c7883cb49aa9ac.jpg">
+                <img
+                  src="https://ortgraph.ru/upload/resize_cache/iblock/c88/63_63_2/c888a4b4802d735888c7883cb49aa9ac.jpg"
+                  alt="Alize 980" width="100" height="100">
+                <span>
+                  Alize 980 </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="pattern-selector" id="pattern-selector">

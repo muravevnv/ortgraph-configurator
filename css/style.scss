@@ -23,7 +23,7 @@
 
 @font-face {
   font-family: "Century Gothic";
-  src: url('../fonts/centurygothic.ttf');
+  src: url("../fonts/centurygothic.ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -117,7 +117,7 @@ button[type="submit"] {
     border: 0;
     opacity: 1;
 
-    @media(max-width: 992px) {
+    @media (max-width: 992px) {
       right: 16px;
       top: 32px;
     }
@@ -150,6 +150,9 @@ button[type="submit"] {
   &__title {
     font-size: 18px;
     margin-bottom: 24px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
   }
 
   &__list {
@@ -171,33 +174,80 @@ button[type="submit"] {
   }
 }
 
-.coverage-selector {
+.coverage-selection {
   padding: 24px;
-  max-width: 550px;
+  max-width: 1200px;
+  width: 100%;
 
   &__title {
     font-size: 18px;
-    margin-bottom: 24px;
+    margin-bottom: 56px;
   }
 
-  &__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-  }
+  &__step {
+    display: none;
 
-  &__item {
-    width: 100%;
-    display: block;
-
-    text-decoration: none;
-    color: var(--color-dark);
-
-    span {
+    &.is-active {
       display: block;
-      margin-top: 4px;
+    }
+
+    &-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-right: 80px;
+      margin-bottom: 40px;
+      min-height: 50px;
+      gap: 16px;
+
+      @media (max-width: 992px) {
+        padding-right: 60px;
+      }
+    }
+
+    &-title {
+      font-size: 24px;
+      font-weight: 600;
+
+      @media(max-width: 992px) {
+        font-size: 16px;
+      }
+    }
+
+    &-content {
+      .product-card-patterns__list {
+        max-width: 600px;
+        margin: 0 auto;
+      }
+    }
+
+    &-back {
+      background-color: white;
+      display: inline-flex;
+      gap: 16px;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 32px;
+      height: 50px;
+      font-size: 16px;
+      outline: none;
+      user-select: none;
+      text-decoration: none;
+      border: 1px solid #010101;
+
+      @media(max-width: 992px) {
+        width: 50px;
+        height: 50px;
+        font-size: 0;
+        padding: 0;
+
+        span {
+          display: none;
+        }
+      }
     }
   }
+  
 }
 
 .pattern-selector {
@@ -207,6 +257,9 @@ button[type="submit"] {
   &__title {
     font-size: 18px;
     margin-bottom: 24px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
   }
 
   &__list {
@@ -341,7 +394,7 @@ button[type="submit"] {
       span {
         text-transform: uppercase;
 
-        @media(max-width: 767px) {
+        @media (max-width: 767px) {
           font-size: 11px;
         }
       }
@@ -352,8 +405,7 @@ button[type="submit"] {
         height: 6.5px;
         transform: rotate(-90deg);
 
-
-        @media(max-width: 767px) {
+        @media (max-width: 767px) {
           transform: rotate(0deg);
         }
       }
@@ -380,15 +432,14 @@ button[type="submit"] {
   &__info {
     display: none;
 
-    @media(max-width: 992px) {
+    @media (max-width: 992px) {
       width: 100%;
       display: block;
       padding: 24px;
-      border: 1px solid #E0E0E0;
-      
+      border: 1px solid #e0e0e0;
     }
 
-    @media(max-width: 560px) {
+    @media (max-width: 560px) {
       .rooms-visualiser__btn {
         margin-top: 8px;
         max-width: 100%;
@@ -585,17 +636,61 @@ button[type="submit"] {
   }
 }
 
-.fancybox-slide--html .fancybox-close-small {
-  position: absolute;
-  z-index: 100;
-  top: 0;
-  right: 0;
-  width: 31px;
-  height: 34px;
-  cursor: pointer;
-  background: url("../img/close.png") no-repeat 50% 50% var(--bg-dark);
+.fancybox-slide--html {
+  .fancybox-close-small {
+    right: 24px;
+    top: 24px;
+    --size: 50px;
+    width: var(--size);
+    height: var(--size);
+    background-color: var(--bg-dark);
+    color: var(--text-inv);
+    border: 0;
+    opacity: 1;
+    transition: .25s;
+
+    &::before {
+      display: none;
+    }
+
+    &:hover {
+      opacity: .6;
+    }
+
+    @media (max-width: 992px) {
+    }
+  }
 }
 
 .hidden {
   display: none;
+}
+
+.popular-sections--item {
+  display: block;
+  height: 85px;
+  width: 100%;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  span {
+    font-size: 14px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 31px;
+    line-height: 31px;
+    padding: 0 15px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background: var(--bg-dark);
+    max-width: 100%;
+    white-space: nowrap;
+    box-sizing: border-box;
+    transition: .2s;
+  }
 }
