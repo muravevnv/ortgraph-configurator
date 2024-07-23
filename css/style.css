@@ -231,6 +231,14 @@ button[type=submit].btn_border {
     display: none;
   }
 }
+.coverage-selection__step-pagination {
+  margin-top: 40px;
+}
+@media (max-width: 992px) {
+  .coverage-selection__step-pagination {
+    margin-top: 24px;
+  }
+}
 
 .pattern-selector {
   padding: 24px;
